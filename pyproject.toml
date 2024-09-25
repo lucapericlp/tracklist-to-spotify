@@ -1,0 +1,19 @@
+[project]
+name = "tracklist-to-spotify"
+version = "0.0.1"
+description = "Convert a tracklist to a Spotify playlist"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx",
+    "pytest-mock",
+    "pandas",
+    "tyro",
+    "requests",
+    "loguru",
+    "tqdm",
+    "spotipy",
+    "python-dotenv",
+]
+
+[tool.uv]
+dev-dependencies = ["pytest"]
