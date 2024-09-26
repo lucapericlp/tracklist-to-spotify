@@ -9,6 +9,9 @@ Supported music services:
 1. Spotify
 
 ## Usage
+
+![usage](./docs/usage.png)
+
 ### Installation
 #### via pipx
 You must have [pipx installed](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx).
