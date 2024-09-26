@@ -1,6 +1,9 @@
+import enum
 from tracklist_to_spotify.publishers.spotify_import import publish
 
+class Publishers(enum.Enum):
+    spotify = "spotify_import"
 
 PUBLISHERS_REGISTRY = {
-    "spotify_import": publish
+    Publishers.spotify: publish
 }
