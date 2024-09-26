@@ -13,7 +13,15 @@ dependencies = [
     "tqdm",
     "spotipy",
     "python-dotenv",
+    "tenacity",
 ]
 
 [tool.uv]
 dev-dependencies = ["pytest"]
+
+[project.scripts]
+import_tracklist = "tracklist_to_spotify.run:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
