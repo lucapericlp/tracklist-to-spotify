@@ -65,9 +65,9 @@ def get_page(url: str):
 def get(url: str) -> List[GenericTrackDetails]:
     html_content = get_page(url)
     meta_names = extract_meta_names_bs4(html_content)
-    breakpoint()
     if len(meta_names) == 0:
-        logger.error(f"Failed to extract any tracks from {url}")
+        logger.error(f"Failed to extract any tracks from {url}!")
+        exit(1)
     logger.info(f"Extracted {len(meta_names)} tracks from {url}")
     # NOTE: this is an implicit contract with the publisher `spotify-import` since we're
     # assuming that there is no special logic related to combining these two fields
