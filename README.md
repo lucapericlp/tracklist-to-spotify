@@ -10,7 +10,7 @@ Supported music services:
 
 ## Usage
 
-![usage](./docs/usage.png | width=400)
+<img src="./docs/usage.png" width="400" />
 
 ### Installation
 #### via pipx
