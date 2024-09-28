@@ -72,6 +72,6 @@ import_tracklist \
     --provider trackid \
     --resource "https://trackid.net/audiostreams/estella-boersma-stone-techno-2024-arte-concert" \
     --username <spotify_username> \
-    --playlist "Estella Boersma - Stone Techno 2024 - ARTE Concert"
-    --downloader spotdl
+    --playlist "Estella Boersma - Stone Techno 2024 - ARTE Concert" \
+    --downloader spotdl \
 ```
