@@ -42,11 +42,11 @@ class SpotDL:
         songs_downloaded = 0
         try:
             url = self._get_playlist_url_from_name(playlist)
-            print(f"Downloading Spotify playlist: {url}")
+            logger.info(f"Downloading Spotify playlist: {url}")
             songs = self.spotdl.search([url])
             results = self.spotdl.download_songs(songs)
             songs_downloaded = len(results)
-            print(f"Download complete. Have fun mixing!")
+            logger.info(f"Download complete. Have fun mixing!")
         except Exception as e:
-            print(f"Error downloading Spotify playlist: {e}")
+            logger.error(f"Error downloading Spotify playlist: {e}")
         return songs_downloaded
