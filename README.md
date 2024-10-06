@@ -1,5 +1,5 @@
 # Tracklist to Spotify
-Ever listened to a set, found the tracklist and wanted to save it in a Spotify playlist? This tool does just that.
+Ever listened to a set, found the tracklist and wanted to save it in a Spotify playlist or download it to your computer? This tool does just that.
 
 Supported tracklist providers:
 1. trackid.net
@@ -7,6 +7,9 @@ Supported tracklist providers:
 
 Supported music services:
 1. Spotify
+
+Supported Spotify downloaders:
+1. spotDL https://github.com/spotDL/spotify-downloader
 
 ## Usage
 
@@ -61,4 +64,14 @@ import_tracklist \
     --resource "https://www.1001tracklists.com/tracklist/2l7dw0z1/chris-stussy-dj-mag-straat-museum-amsterdam-netherlands-2021-03-10.html" \
     --username <spotify_username> \
     --playlist "Stussy @ DJ Mag Straat Museum Amsterdam Netherlands 2021-03-10"
+```
+
+##### Downloading Spotify Playlist
+```bash
+import_tracklist \
+    --provider trackid \
+    --resource "https://trackid.net/audiostreams/estella-boersma-stone-techno-2024-arte-concert" \
+    --username <spotify_username> \
+    --playlist "Estella Boersma - Stone Techno 2024 - ARTE Concert" \
+    --downloader spotdl \
 ```
