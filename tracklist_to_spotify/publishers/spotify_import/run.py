@@ -84,7 +84,7 @@ class SpotifyImport:
     def _save_tracks(self, tracks: List[str], failed_count: int, playlist: Optional[dict] = None):
         if self.destination == 'playlist':
             if playlist is None:
-                playlist = self.sp.user_playlist_create(user=self._get_user_id(), name=self.playlist, public=False)
+                playlist = self.sp.user_playlist_create(user=self._get_user_id(), name=self.playlist, description="Generated using tracklist-to-spotify", public=False)
             self.sp.playlist_add_items(playlist['id'], tracks)
         else:
             self._save_tracks_to_library(tracks)
